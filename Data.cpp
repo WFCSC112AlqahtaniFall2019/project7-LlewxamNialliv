@@ -14,12 +14,16 @@ Data::Data() { //default constructor
     ZeroEmission = true;
 }
 
-Data::Data(string C, int GHG_E, int y, bool ZE) {
+Data::Data(string C, int GHG_E, int y) {
     //assign data to the variables accordingly
     Country = C;
     GHG_Emission_tonnes = GHG_E;
     year = y;
-    ZeroEmission = ZE;
+    if(GHG_Emission_tonnes == 0){
+        ZeroEmission = true;
+    } else{
+        ZeroEmission = false;
+    }
 }
 
 bool Data::operator > (const Data &Country) {

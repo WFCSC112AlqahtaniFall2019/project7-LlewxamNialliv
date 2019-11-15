@@ -15,7 +15,7 @@ class Data {
 
 public:
     Data(); //default constructor
-    Data(string C, int GHG_E, int y, bool ZE); //alternative constructor
+    Data(string C, int GHG_E, int y); //alternative constructor
 
     bool operator > (const Data &Country);//operator overloading for comparison
     bool operator <= (const Data &Country);
