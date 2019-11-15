@@ -1,14 +1,13 @@
-//
-// Created by 12396 on 11/14/2019.
-//
-
 #ifndef PROJECT7_SORTEDLINKEDLIST_H
 #define PROJECT7_SORTEDLINKEDLIST_H
+#include "LinkedList.h"
+using namespace std;
 
+class SortedLinkedList : public LinkedList {
 
-class SortedLinkedList {
-
+public:
+    SortedLinkedList();
+    void insertSorted(Data &Data);
 };
-
 
 #endif //PROJECT7_SORTEDLINKEDLIST_H
