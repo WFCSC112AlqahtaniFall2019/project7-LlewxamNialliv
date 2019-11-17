@@ -37,10 +37,10 @@ int main() {
 
     if (!inFile.is_open()){ // open check for files
         cout << "Fail to open input file" << endl;
-        return 1;
+        return  1;
     }
 
-    if (!stacked.is_open()){
+    if (!stacked.is_open()){ //different exceptions
         cout << "Fail to open stack file" << endl;
         return 10;
     }
@@ -67,7 +67,7 @@ int main() {
         string GHG_Emission_tonnes1;
         getline(inFile, GHG_Emission_tonnes1, ',');
 
-        int year = stoi(Year1);
+        int year = stoi(Year1); //turn string into int
         int GHG_E = stoi(GHG_Emission_tonnes1);
 
         Data nextCountry = Data(Country1, year, GHG_E);
