@@ -1,0 +1,7 @@
+Project7 Data Set Description
+Zexuan Huang
+
+This project, I utilize the data from Kaggle, which is a dataset of historical Green House Gases emission of 200+ Countries around the world.
+url: https://www.kaggle.com/srikantsahu/co2-and-ghg-emission-data
+
+By analyzing the historical data of GHG emission, we can get a better understanding for the role each country played in the process of global warming. Which is helpful for us to understand today's fast changing world.
